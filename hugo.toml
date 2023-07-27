@@ -1,0 +1,188 @@
+baseURL = "https://stamatiosgaliatsatos.com/"
+#
+languageCode = 'en-us,el-gr'
+title = "STG"
+
+theme = "PaperMod"
+paginate = 5
+
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+pygmentsUseClasses = true
+[sitemap]
+changefreq = "monthly"
+filename = "sitemap.xml"
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+keywords = [
+    "Blog",
+    "Portfolio",
+    "Photography",
+    "Physics",
+    "3dprints",
+    "fpvdrones",
+    "uav",
+    "quadcopter",
+    "drone",
+    "stamatios",
+    "galiatsatos",
+    "stamgali",
+    "stamatios galiatsatos",
+]
+dateFormat = "2 January, 2006"
+defaultTheme = "auto"
+disableThemeToggle = true
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = false
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = true
+tocopen = false
+displayFullLangName = true
+
+[[params.socialIcons]]
+name = "Github"
+url = "https://github.com/Logicenios"
+[[params.socialIcons]]
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/galiatsatos/"
+[[params.socialIcons]]
+name = "email"
+url  = "mailto:stamatisgal@gmail.com"
+[[params.socialIcons]]
+name = "rss"
+url = "/index.xml"
+
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+
+# Language configuration
+[languages]
+[languages.en]
+languageName = "English"
+#displayFullLangName = true
+weight = 1
+[languages.en.taxonomies]
+category = "categories"
+tag = "tags"
+[languages.en.menu]
+[[languages.en.menu.main]]
+name = "posts"
+url = "posts/"
+weight = 1
+[[languages.en.menu.main]]
+name = "projects"
+url = "projects/"
+weight = 2
+[[languages.en.menu.main]]
+name = "resume"
+url = "resume.html"
+weight = 3
+
+[languages.en.params]
+author = "Stamatios Galiatsatos"
+[languages.en.params.profileMode]
+enabled = true
+title = "Welcome to my page 👋🏻"
+subtitle = """Undegraduate Physicist | Photographer | UAV Pilot"""
+#imageUrl = "/images/avatar.png"
+#imageTitle = "Avatar"
+imageWidth = 150
+imageHeight = 150
+
+
+[languages.el]
+languageName = "Ελληνικά"
+#displayFullLangName = true
+weight = 2
+[languages.el.taxonomies]
+category = "categories"
+tag = "tags"
+[languages.el.menu]
+[[languages.el.menu.main]]
+name = "άρθρα"
+url = "posts/"
+weight = 1
+[[languages.el.menu.main]]
+name = "έργο"
+url = "projects/"
+weight = 2
+[[languages.el.menu.main]]
+name = "βιογραφικό"
+url = "resume.html"
+weight = 3
+[languages.el.params]
+author = "Σταμάτιος Γαλιατσάτος"
+[languages.el.params.profileMode]
+enabled = true
+title = "Καλώς ήρθατε στην σελίδα μου 👋🏻"
+subtitle = """Φοιτητής Φυσικής | Φωτογράφος | Πιλότος UAV"""
+#imageUrl = "/images/bg.png"
+#imageTitle = "Avatar"
+imageWidth = 150
+imageHeight = 150
+
+[params.assets]
+favicon = "/favicon/favicon.ico"
+favicon16x16 = "/favicon/favicon-16x16.png"
+favicon32x32 = "/favicon/favicon-32x32.png"
+apple_touch_icon = "/favicon/apple-touch-icon.png"
+safari_pinned_tab = "/favicon/safari-pinned-tab.svg"
+
+#[[params.profileMode.buttons]]
+#name = "Portofolio"
+#url = "portofolio.html"
+[params.cover]
+hidden = true
+hiddenInList = true
+hiddenInSingle = true
+[params.editPost]
+URL = "https://github.com/<path_to_repo>/content"
+Text = "Suggest Changes"
+appendFilePath = true
+
+
+#Example for extra menu entry
+#[[menu.main]]
+#identifier = "example"
+#name = "example.org"
+#url = "https://example.org"
+#weight = 30
+
+[markup.highlight]
+noClasses = false
+
+
+[privacy]
+[privacy.disqus]
+disable = true
+[privacy.googleAnalytics]
+disable = true
+[privacy.instagram]
+disable = true
+[privacy.twitter]
+disable = true
+[privacy.vimeo]
+disable = true
+[privacy.youtube]
+disable = true
